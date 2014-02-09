@@ -93,10 +93,10 @@ public class MainActivity extends Activity {
 	    	Gson gson = new Gson();
 	    	GuidanceData data = gson.fromJson(obj.get("guidance"), GuidanceData.class);
 	    	
+	    	GuidanceRoute route = new GuidanceRoute(data);
+	    	
 	    	EditText respField = (EditText) findViewById(R.id.JSONfield);
-	    	//respField.setText("success!");
-	    	//respField.setText(route.toString());
-	    	respField.setText(data.toString());
+	    	respField.setText(route.toString());
 	    }
 	}
 
