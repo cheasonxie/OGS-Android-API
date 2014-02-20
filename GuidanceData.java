@@ -1,4 +1,4 @@
-package com.example.json_test;
+package com.hci.cyclenav.guidance;
 
 import com.google.gson.annotations.SerializedName;
 

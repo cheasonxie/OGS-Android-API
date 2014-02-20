@@ -1,4 +1,6 @@
-package com.example.json_test;
+package com.hci.cyclenav.guidance;
+
+import com.hci.cyclenav.R;
 
 import android.content.Context;
 
@@ -36,9 +38,7 @@ public class HttpUtil {
 		//if any keys are undefined, set them to default values
 		if(httpStr.indexOf("routeType") < 0) append("routeType", "bicycle");
 		if(httpStr.indexOf("narrativeType") < 0) append("narrativeType", "text");
-		if(httpStr.indexOf("fishbone") < 0) append("fishbone", "false");
-		if(httpStr.indexOf("callback") < 0) append("callback", "renderBasicInformation");
-		
+		if(httpStr.indexOf("fishbone") < 0) append("fishbone", "false");		
 		
 		String noWhitespace = httpStr.toString().replaceAll("\\s+", "%20");
 		
